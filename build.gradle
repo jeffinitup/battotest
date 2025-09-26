@@ -45,6 +45,7 @@ dependencies {
 	mappings "btw.community:mappings:1.0.3"
 
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+	modImplementation "io.github.llamalad7:mixinextras-common:0.3.2"
 
 	implementation 'net.fabricmc:fabric-loom:1.4-SNAPSHOT'
 
