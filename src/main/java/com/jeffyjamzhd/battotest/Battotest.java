@@ -1,7 +1,7 @@
 package com.jeffyjamzhd.battotest;
 
-import btw.AddonHandler;
-import btw.BTWAddon;
+import api.AddonHandler;
+import api.BTWAddon;
 import btw.crafting.recipe.RecipeManager;
 import net.minecraft.src.Item;
 import net.minecraft.src.ItemStack;

@@ -2,7 +2,6 @@ package com.jeffyjamzhd.battotest.mixin;
 
 import com.jeffyjamzhd.battotest.ItemBaguette;
 import com.jeffyjamzhd.battotest.render.BaguetteRenderer;
-import com.llamalad7.mixinextras.sugar.Local;
 import com.prupe.mcpatcher.cit.CITUtils;
 import net.minecraft.src.*;
 import org.lwjgl.opengl.GL11;
@@ -12,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-@Mixin(ItemRenderer.class)
+@Mixin(value = ItemRenderer.class, remap = false)
 public class ItemRendererMixin {
     @Shadow private ItemStack itemToRender;
     @Shadow private float prevEquippedProgress;
